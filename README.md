@@ -1,4 +1,4 @@
-# Barnsley Fern in Simon BASIC
+# Barnsley Fern in Simon's BASIC
 
 A chaos game generated fern written in Simon's BASIC for the C64.
 
