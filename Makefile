@@ -1,11 +1,17 @@
+NAME=fern
+
 PETCAT = petcat -wsimon
 VICE = x64 -cartsimon simon.crt
 
-.PHONY: fern
+.PHONY: run renumber
 
-fern: fern.prg
+$(NAME): $(NAME).prg
 
-fern.prg: fern.bas
+$(NAME).prg: $(NAME).bas
 	$(PETCAT) -o $@ -- $< 
-run:
-	$(VICE) fern.prg
+run: $(NAME).prg
+	$(VICE) $(NAME).prg
+
+renumber:
+	./renumber $(NAME).bas $(NAME).bas.r
+	mv $(NAME).bas.r $(NAME).bas
