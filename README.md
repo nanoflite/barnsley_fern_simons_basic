@@ -16,9 +16,24 @@ Optional:
   * A Simon's BASIC cartridge
   * Patience
 
+## Run
+
+`$> make run`
+
+If you want to generate the Sierpinski triangle...
+
+`$> make run NAME=sierpinski`
+
 ## Example
 
+### Barnsley Fern
+
 ![Fern](./fern.png)
+
+### Sierpinski triangle
+
+![Triangle](./sierpinski.png)
+
 
 # Copyright
 
